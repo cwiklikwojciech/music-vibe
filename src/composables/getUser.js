@@ -2,14 +2,13 @@ import { ref } from "vue";
 import { projectAuth } from "../firebase/config";
 
 const user = ref(projectAuth.currentUser);
-const status = ref(null);
 
 projectAuth.onAuthStateChanged(_user => {
     user.value = _user;
 })
 
 const getUser = () =>{
-    return {user}
+    return { user }
 }
 
 export default getUser
