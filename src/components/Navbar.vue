@@ -6,6 +6,8 @@
         <div class="links">
             <div v-if="user">
                 <router-link :to="{name: 'CreatePlaylist'}"> Create Playlist</router-link>
+                <router-link :to="{name: 'UserPlaylist'}"> My Playlist</router-link>
+                <span> Hi there, {{ user.displayName }}</span>
                 <button v-if="user" @click="handleLogout">Log out</button>
             </div>
             <div v-else>
@@ -21,7 +23,6 @@
 import getUser from '@/composables/getUser';
 import useLogout from '@/composables/useLogout';
 import { useRouter } from 'vue-router';
-import { computed } from 'vue';
 
 export default {
     setup(){
@@ -66,5 +67,12 @@ export default {
     }
     nav img{
         max-height: 60px;
+    }
+    span{
+        font-size: 14px;
+        display: inline-block;
+        margin-left: 16px;
+        padding-left: 16px;
+        border-left: 1px solid #eee;
     }
 </style>
