@@ -1,19 +1,34 @@
-# music-vibe
+# Vue Firebase Music Vibe App Example
+Let's learn vue with firebase database  🚀
 
-## Project setup
-```
-npm install
-```
+This project created when i learn Vue. This project name Music Vibe with firebase database
+## Technology
+Vue JS -  [https://vuejs.org](https://vuejs.org/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Firebase -  [https://firebase.google.com](https://firebase.google.com/)
+## Installation
+`git clone https://github.com/cwiklikwojciech/music-vibe.git`
 
-### Compiles and minifies for production
-```
-npm run build
-```
+`cd music-vibe`
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+The firebase config located at src/config/config.js
+
+`npm install`
+
+## Run Project
+
+`npm run serve`
+
+## Functionalities from course
+- Signup
+- Login
+- Logout
+- Create playlist
+- My playlist
+- Add song
+- Delete song
+- Delete playlist
+
+## My own ideas and implementation 
+- Soon 
+
